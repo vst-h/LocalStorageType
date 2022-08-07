@@ -1,39 +1,4 @@
-export interface StorageKeyValue {
-  // undefined: undefined
-  // null: null
-  // nullOpt?: null
-
-  // string: string
-  // stringOpt?: string
-  // stringOrNull: string | null
-  // stringOrNullOpt?: string | null
-  // stringLiteral: "a" | "b" | "c"
-  // stringAndLiteral: "a" | (string & {})
-
-  // number: number
-  // numberOpt?: number
-  // numberOrNull: number | null
-  // numberOrNullOpt?: number | null
-  // numberLiteral: 1 | 2 | 3
-  // numberAndLiteral: 1 | (number & {})
-
-  // obj: { a: 1 }
-  // objOpt?: { a: 1 }
-  // objOrNull: { a: 1 } | null
-  // objOrNullOpt?: { a: 1 } | null
-
-  // boolean: boolean
-
-  // // 不能使用 JSON
-  // date: Date // 反序列化成 string
-
-  // // JSON 序列化抛出异常
-  // bigint: bigint
-
-  // // 不应该存储的类型
-  // fn: () => 1
-  // symbol: symbol
-}
+export interface StorageKeyValue { }
 
 type KV = StorageKeyValue
 type TemplateLiteralType = number | string | bigint | boolean
