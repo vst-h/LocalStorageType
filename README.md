@@ -67,7 +67,7 @@ function usageExampleCode() {
   localStorage.setJsonItem("obj", { a: 1 })
   const obj = localStorage.getJsonItem("obj")
   //    ^?
-  // obj: { a: 1 }
+  // obj: { a: number }
 
   // Provide type hints for key parameters
   localStorage.removeItem("stringOpt")
