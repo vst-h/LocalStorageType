@@ -10,14 +10,15 @@ JSON 支持：添加了两个便利的方法 `getJsonItem` 和 `setJsonItem` ，
 因为对 interface `Storage` 使用了[声明合并](https://www.typescriptlang.org/docs/handbook/declaration-merging.html)，所以会影响到所有 `Storage` 实例，如：`localStorage`、`sessionStorage`。如果本包影响到您的代码，请不要使用。
 
 ## 用法
-在项目入口处 import 包并添加 interface 声明合并代码。比如在 `main.js` 文件 import ，也可以是独立的文件，只要把包 import 就可以。interface 声明合并也可以放到 `*.d.ts` 文件中。
+在项目入口处 import 包并添加 interface 声明合并代码。比如在 `main.ts` 文件 import ，也可以是独立的文件，只要把包 import 就可以。interface 声明合并也可以放到 `*.d.ts` 文件中。
 
 [使用示例，转到
 TS playground()
 查看类型效果。]: #
 
 ``` ts
-import 'LocalStorageType' // Add two methods `getJsonItem` and `setJsonItem` to localStorage
+// Add two methods `getJsonItem` and `setJsonItem` to localStorage
+import 'LocalStorageType'
 
 // Declare the key value type of your localStorage storage here
 declare module 'LocalStorageType' {

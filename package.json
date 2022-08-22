@@ -2,7 +2,7 @@
   "name": "localstoragetype",
   "author": "vst-h",
   "license": "MIT",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "keywords": [
     "localStorage",
     "TypeScript",

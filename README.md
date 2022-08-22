@@ -10,14 +10,15 @@ JSON support: adds two convenience methods `getJsonItem` and `setJsonItem` with 
 Because [Declaration Merging](https://www.typescriptlang.org/docs/handbook/declaration-merging.html) is used for interface `Storage`, it affects all `Storage` instances, e.g. `localStorage`, `sessionStorage`. Please do not use this package if it affects your code.
 
 ## Usage
-Import the package at the project entry and add the interface declaration merge code. For example, import in the `main.js` file, or as a separate file, just import the package. The interface declaration merge can also be placed in the `*.d.ts` file.
+Import the package at the project entry and add the interface declaration merge code. For example, import in the `main.ts` file, or as a separate file, just import the package. The interface declaration merge can also be placed in the `*.d.ts` file.
 
 [Usage examples, Go to
 TS playground()
 view type effects.]: #
 
 ``` ts
-import 'LocalStorageType' // Add two methods `getJsonItem` and `setJsonItem` to localStorage
+// Add two methods `getJsonItem` and `setJsonItem` to localStorage
+import 'LocalStorageType'
 
 // Declare the key value type of your localStorage storage here
 declare module 'LocalStorageType' {
